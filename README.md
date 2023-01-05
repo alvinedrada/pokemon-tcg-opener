@@ -14,7 +14,7 @@ Intermediate
 * Basic javascript (functions, strings)
 
 ## Instructions
-1. Open the project in Replit (insert link) and create the following files:
+1. Open the project in [(Replit)](https://replit.com/join/nwzszkyije-alvin-jeremyjer) and create the following files:
   * index.html
   * styles.css
   * app.js
