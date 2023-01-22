@@ -93,8 +93,17 @@ yourVariableName.addEventListener("click", openPack);
 2. Create a function called openPack that generates pokemon cards images
 * Inside the function, store the ```opened-pokemon-cards``` element in a variable using the DOM method.
 
-* Create a while loop that checks if the variable you just made has children (hint: you can use element.firstChild or element.hasChildNodes() or element.childNodes.length > ?) 
-  * And if the condition is true, remove all the children (https://developer.mozilla.org/en-US/docs/Web/API/Element/remove or https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild).
+* Create a while loop that checks if the variable you just made has children. Copy the following code into the function.
+ ``` javascript
+ while (cards.firstChild) {
+   
+ }
+ ```
+  * And if the condition is true, remove all the children. Copy the code into the while loop.
+  ``` javascript
+  cards.removeChild(cards.firstChild);
+  ```
+  * The code above removes the HTML element that contains the pokemon cards if there is already children.
   
 * Now we must create the cards that will be openedCreate a for loop that runs 11 times. For review: https://www.w3schools.com/js/js_loop_for.asp
   * Inside the for loop you will want to create a card each time the loop runs, so make an ```div``` element using DOM:
