@@ -16,7 +16,7 @@ Intermediate
 * Event listeners
 * For loop
 
-## Instructions (if doing easy template, skip to Part III: Javascript)
+## Instructions
 
 ## Part I: HTML
 
