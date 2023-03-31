@@ -210,7 +210,7 @@ let cards = document.getElementById(yourElementId");
   cardImg.id = cardNumber;
   ```
 
-  * Create a variable ```randomNumber``` and set it to a function called ```getRandomNumber(1, 102)``` (Because there are 102 cards in the card pool)
+  * Create a variable ```randomNumber``` and set it to a function called ```getRandomNumber(1, 98)``` (Because there are 98 cards in the card pool)
   ``` javascript
   let randomNumber = insertFunctionNameHere(1, 102);
   ```
