@@ -1,6 +1,8 @@
 # Pokemon TCG Opener
 
-Pokemon is so awesome so go create a Pokemon trading card pack opener using HTML, CSS, and JS. This project will use skills you learned about DOM, 
+Pokemon is so awesome so go create a Pokemon trading card pack opener using HTML, CSS, and JS. This project will use skills you learned about DOM.
+
+An example of what the finished product may look like can be found here: https://pokemon-tcg-opener.alvin-edrada.repl.co/
 
 ## Difficulty
 Intermediate
