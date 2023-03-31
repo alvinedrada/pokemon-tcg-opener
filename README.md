@@ -1,6 +1,6 @@
-# Pokemon TCG Opener
+# Pokemon TCG Opener Easy Version
 
-Pokemon is so awesome so go create a Pokemon trading card pack opener using HTML, CSS, and JS. This project will use skills you learned about DOM
+Pokemon is so awesome so go create a Pokemon trading card pack opener using HTML, CSS, and JS. This project will use skills you learned about DOM. The easy version will give you the template for the HTML and CSS so you will focus more on the Javascript.
 
 An example of what the finished product may look like can be found here: https://pokemon-tcg-opener.alvin-edrada.repl.co/
 
@@ -16,147 +16,9 @@ Intermediate
 * Event listeners
 * For loop
 
-## Instructions (if doing easy template, skip to Part III: Javascript)
+## Instructions
 
-## Part I: HTML
-
-1. Link your css file by adding ```<link href="style.css" rel="stylesheet" type="text/css" />``` inside your ```<head>``` element. 
-
-2. We will also be adding a custom font from a website, so add this stylesheet ```<link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">``` into your ```head``` element as well.
-
-3. Then link your javascript file by adding ```<script src="script.js"></script>``` into your ```body``` element.
-
-4. In the ```body``` of the HTML file, create a ```div```. Place this before your javascript link ```script```.
-
-5. Inside your newly made ```div```, create a ```h1``` header and make it say ```Click the Pokemon card pack to open it!```. Then create a ```h2``` header and make it say ```Then click on your cards to flip them!```.
-
-6. After your two header elements, create the following with the correct nested indented structure below. (The img should be nested inside of the div):
-  * ```div``` with an id of "pokemon-pack-cover"
-    * ```img``` with a src linked to "/pokemon-cards/pack-cover.png"
-  * ```div``` with an id of "opened-pokemon-cards"
-  
-  
-<details>
-      <summary>When done with the steps above, your HTML file should look like this:</summary>
-
-``` HTML
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
-</head>
-
-<body>
-  <div>
-    <h1>Click the Pokemon card pack to open it!</h1>
-    <h2>Then click on your cards to flip them!</h2>
-    <div id="pokemon-pack-cover">
-      <img src="pokemon-cards/pack-cover.png">
-    </div>
-    <div id="opened-pokemon-cards">
-    </div>
-  </div>
-  <script src="script.js"></script>
-</body>
-
-</html>
-```
-</details>
-
-## Part II: CSS
-1. Import a custom font by pasting ```@import url('https://fonts.cdnfonts.com/css/pokemon-solid');``` at the top of your css file.
-
-2. Target the ```body``` element.
-  * Set the ```text-align``` to ```center```
-  * Set the ```font-family``` to ```'Pokemon Solid', sans-serif;```
-  * Set the ```letter-spacing``` to ```5px```
-  * Set the ```margin``` to ```10px```
-  * Create a flexbox by setting ```display``` to ```flex```
-  * Set ```justify-content``` to ```center```
-  
-3. Target the ```#pokemon-pack-cover``` id.
-  * Set the ```margin-top``` to ```20px```
-  * Set the ```cursor``` to ```pointer``` (this changes the cursor when hovering over the image)
-  
-4. Target the ```#opened-pokemon-cards``` id.
-  * Create a flexbox by setting ```display``` to ```flex```
-  * Set ```justify-content``` to ```center```
-  * Set ```flex-wrap``` to ```wrap```
-  * Set ```max-width``` to ```1600px```
-  
-5. Target the ```.pokemon-card``` class.
-  * Set ```margin``` to ```10px```
-  * Set ```width``` to ```300px```
-  * Set ```height``` to ```410px```
-  * Set ```cursor``` to ```pointer```
-  
-6. Target the ```.pokemon-card img``` class and element
-  * Set ```width``` to ```100%```
-  * Set ```height``` to ```100%```
-  * Set ```transition``` to ```transform 1.2s```. This creates a transformation event that takes 1.2 seconds long.
-  * Set ```transform-style``` to ```preserve-3d```. This creates a 3D effect for your pokemon cards.
-  
-7. Target the ```.flipped``` class
-  * Set ```transform``` to ```rotateY(360deg)```. This creates an animation that flips your image 360 degrees.
-  * Set ```cursor``` to ```default```
-
-<details>
-      <summary>When done with the steps above, your CSS file should look like this:</summary>
-
-``` CSS
-@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
-
-body {
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-  font-family: 'Pokemon Solid', sans-serif;
-  letter-spacing: 5px;
-  text-align: center;
-}
-
-#pokemon-pack-cover {
-  margin-top: 20px;
-  cursor: pointer;
-}
-
-/* stretch goals grid*/
-#opened-pokemon-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1600px;
-}
-
-.pokemon-card {
-  margin: 10px;
-  width: 300px;
-  height: 410px;
-  cursor: pointer;
-}
-
-.pokemon-card img {
-  width: 100%;
-  height: 100%;
-  transition: transform 1.2s;
-  transform-style: preserve-3d;
-  
-}
-
-.flipped {
-  transform: rotateY(360deg);
-  cursor: default;
-}
-
-```
-</details>
-
-## Part III: JS
+## Part I: Javascript
 
 1. Create a reference to the element with the id```pokemon-pack-cover``` by using ```document.getElementById("yourElementId")```.
 
