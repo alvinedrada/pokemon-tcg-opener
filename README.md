@@ -212,7 +212,7 @@ let cards = document.getElementById(yourElementId");
 
   * Create a variable ```randomNumber``` and set it to a function called ```getRandomNumber(1, 98)``` (Because there are 98 cards in the card pool)
   ``` javascript
-  let randomNumber = insertFunctionNameHere(1, 102);
+  let randomNumber = insertFunctionNameHere(1, 98);
   ```
   
   * Set the ```img``` element ```src``` to the image ```"pokemon-cards/pokemon-card-back.jpg"```
