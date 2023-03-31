@@ -1,6 +1,6 @@
 # Pokemon TCG Opener
 
-Pokemon is so awesome so go create a Pokemon trading card pack opener using HTML, CSS, and JS. This project will use skills you learned about DOM.
+Pokemon is so awesome so go create a Pokemon trading card pack opener using HTML, CSS, and JS. This project will use skills you learned about DOM
 
 An example of what the finished product may look like can be found here: https://pokemon-tcg-opener.alvin-edrada.repl.co/
 
@@ -240,18 +240,20 @@ function functionName(parameter1, parameter2) {
     // code
 }
 ```
-    * Inside the function, remove the event listener to prevent the card from being flipped again. You can copy the line of code below.
-    ``` javascript
-    cardImg.removeEventListener("click", flipCard);
-    ```
-    * Then, add a class called ```flipped``` to the cardImg parameter.
-    ``` javascript
-    cardImg.classList.???.("classToAdd");
-    ```
-    * Change the src of the cardImg parameter to the following:
-    ``` javascript
-    "pokemon-cards/card-" + num + ".jpg";
-    ```
+
+  * Inside the function, remove the event listener to prevent the card from being flipped again. You can copy the line of code below.
+  ``` javascript
+  cardImg.removeEventListener("click", flipCard);
+  ```
+  * Then, add a class called ```flipped``` to the cardImg parameter.
+  ``` javascript
+  cardImg.classList.???.("classToAdd");
+  ```
+  * Change the src of the cardImg parameter to the following:
+  ``` javascript  
+  "pokemon-cards/card-" + num + ".jpg";
+  ```
+    
     
 5. Create the getRandomNumber function with 2 parameters, min and max
 * Inside the function paste the following ```Math.floor(Math.random() * (max - min) + min);```. This generates a random integer between other integers. Your function can be copy and pasted from below.
